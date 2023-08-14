@@ -1,31 +1,17 @@
-import './App.css'
+import "./App.css";
+import Header from "./components/Header";
+import Jobs from "./components/Jobs";
+// N'oubliez pas d'importer le composant Footer si nécessaire
+import Footer from "./components/Footer";
 
 function App() {
-
   return (
     <div className="app-container">
-      <Header>
-        <Title>Le Job Board</Title>
-      </Header>
-  
-      <Jobs>
-        {jobList.map((job, index) => (
-          <Job
-            key={index}
-            className={job.className}
-            title={job.title}
-            contractType={job.contractType}
-            country={job.country}
-            city={job.city}
-          />
-        ))}
-      </Jobs>
-  
-      <Footer>
-        {/* Contenu du pied de page ici */}
-      </Footer>
+      <Header />
+      <Jobs /> {}
+      <Footer>{}</Footer>
     </div>
   );
-        }
+}
 
-export default App
+export default App;
